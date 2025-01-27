@@ -14,20 +14,23 @@ h1 {
   align-items: center;
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   margin: 15px auto;
-  background-color: #fff;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
-  overflow: hidden;
   transition: transform 0.2s;
-  width: 600px;
+  max-width: 600px;
   padding: 10px;
-  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px -10px;
 }
 
 .card .id {
@@ -38,14 +41,13 @@ h1 {
   margin: 10px 0px;
   padding: 5px;
   display: inline;
-  text-align: left;
 }
 
 .card .name {
   font-size: 22px;
   font-weight: 400;
   font-weight: bold;
-  margin: 00px 0;
+  margin: 20px 0;
   color: #555;
 }
 
@@ -55,10 +57,6 @@ h1 {
   font-size: 20px;
   align-items: center;
   color: #555;
-}
-
-.info span {
-  display: block;
 }
 
 .card .instock {
@@ -85,8 +83,10 @@ button {
   background-color: #0c68a1;
   color: #ffffff;
   cursor: pointer;
-  padding: 10px;
+  padding: 7px 10px;
   font-size: 20px;
+  display: inline-block;
+  margin: 20px 10px;
 }
 
 button.onlyStock {
