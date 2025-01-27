@@ -1,11 +1,11 @@
 import "../App.css";
 import { useState } from "react";
 import { useFetch } from "../hooks/useFetch";
-import Loading from "../assets/loading.gif";
+// import Loading from "../assets/loading.gif";
 
 export const ProductList = () => {
   const [url, setUrl] = useState("http://localhost:3000/products");
-  const { data: products, loading } = useFetch(url);
+  const { data: products, loading, error } = useFetch(url);
 
   return (
     <section>
@@ -28,6 +28,7 @@ export const ProductList = () => {
       )} */}
 
       {loading && <p>Loading Products...</p>}
+      {error && <p>{error}</p>}
 
       {products &&
         products.map((product) => (
