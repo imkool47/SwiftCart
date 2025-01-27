@@ -1,6 +1,7 @@
 import "../App.css";
 import { useState } from "react";
 import { useFetch } from "../hooks/useFetch";
+import Loading from "../assets/loading.gif";
 
 export const ProductList = () => {
   const [url, setUrl] = useState("http://localhost:3000/products");
@@ -19,7 +20,14 @@ export const ProductList = () => {
         </button>
       </div>
 
-      {loading && <p>loading Products...</p>}
+      {/* {loading && (
+        <p className="loading">
+          {" "}
+          <img src={Loading} alt="" />
+        </p>
+      )} */}
+
+      {loading && <p>Loading Products...</p>}
 
       {products &&
         products.map((product) => (
