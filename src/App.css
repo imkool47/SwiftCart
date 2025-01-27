@@ -1,0 +1,98 @@
+.App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.heading {
+  font-size: 22px;
+  align-items: center;
+}
+
+.card {
+  margin: 15px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 600px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card .id {
+  background-color: #4e06a0;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 5px;
+  display: inline;
+  text-align: left;
+}
+
+.card .name {
+  font-size: 22px;
+  font-weight: 400;
+  font-weight: bold;
+  margin: 00px 0;
+  color: #555;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  color: #555;
+}
+
+.info span {
+  display: block;
+}
+
+.card .instock {
+  background-color: #06a02d;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline;
+}
+
+.card .unavailable {
+  background-color: #a00620;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline;
+}
+
+button {
+  border: 0px;
+  border-radius: 5px;
+  background-color: #0c68a1;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+button.onlyStock {
+  background-color: #0ca14f;
+}
+
+button.all {
+  background-color: #065ba0;
+}
